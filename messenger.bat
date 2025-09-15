@@ -5,6 +5,6 @@ set /p "computer=Címzett: "
 :a
 set "msg="
 set /p "msg=%computer%> "
-if not "%msg%"=="" set msg="%msg%"
+if not "%msg%"=="" set msg="%computername%: %msg%"
 msg /server:%computer% hallgato %msg%
 goto a
